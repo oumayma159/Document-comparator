@@ -1,0 +1,72 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.env/
+*.venv
+pip-log.txt
+pip-delete-this-directory.txt
+
+# PyCharm project settings (optional)
+.idea/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Log files
+*.log
+
+# Cache files
+*.cache
+*.mo
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+*.sqlite
+
+# PDF and document outputs
+data/base_documents/*.pdf
+data/new_documents/*.pdf
+data/organized_documents/**/*.pdf
+data/organized_documents/**/*.txt
+
+# Ignore generated text files
+*.txt
+*.csv
+*.tsv
+
+# Ignore temporary files
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# VS Code settings (optional)
+.vscode/
+
+# Ignore coverage reports
+htmlcov/
+.coverage
+*.cover
+*.coverage.*
+*.py,cover
+
+# Ignore test and temp directories
+tests/
+temp/
+tmp/
+
+# Ignore compiled files
+*.o
+*.so
+*.dll
+
+# Ignore build directories
+build/
+dist/
+*.egg-info/
+*.egg
