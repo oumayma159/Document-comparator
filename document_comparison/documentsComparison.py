@@ -27,7 +27,7 @@ def load_existing_documents(documents_dir = "data/organized_documents", ngram_ra
         languages.append(lang)
     # BERT for embeddings
     if contents:
-        model = SentenceTransformer("paraphrase-MiniLM-L6-v2") 
+        model = SentenceTransformer("distiluse-base-multilingual-cased-v2") 
         document_vectors = model.encode(contents, convert_to_tensor=True)
         documents_metadata = [
             {
