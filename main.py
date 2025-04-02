@@ -1,10 +1,12 @@
 import sys
+import os
 from document_processing.languageDetection import organize_all_documents
 from document_comparison.documentsComparison import load_existing_documents, compare_to_existing
 
 def main(pdf_path):
-    output_dir = "data/organized_documents"
-    base_folder = "C:/Users/dell/Desktop/TECH/ML-AI/LLMs/DocumentComparator/data/base_documents"
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+    output_dir = os.path.join(BASE_DIR, "data", "organized_documents")
+    base_folder = os.path.join(BASE_DIR, "data", "base_documents")
     doc_info = organize_all_documents(base_folder, output_dir=output_dir)
     if doc_info:
         print(f"Loading existing documents uder language: {doc_info['lang_name']}")
