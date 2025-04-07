@@ -28,16 +28,8 @@ pip-delete-this-directory.txt
 *.sqlite3
 *.sqlite
 
-# PDF and document outputs
-data/base_documents/*.pdf
-data/new_documents/*.pdf
-data/organized_documents/**/*.pdf
-data/organized_documents/**/*.txt
-
-# Ignore generated text files
-*.txt
-*.csv
-*.tsv
+# Data directory
+data/
 
 # Ignore temporary files
 *.tmp

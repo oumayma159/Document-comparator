@@ -1,0 +1,8 @@
+accelerate
+langcodes
+langdetect
+pdfplumber
+PyMuPDF
+pytesseract
+sentence-transformers
+torch
